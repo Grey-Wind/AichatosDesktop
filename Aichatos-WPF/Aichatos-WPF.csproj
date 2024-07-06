@@ -7,6 +7,17 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="QingYi.Core" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CheckGetUrlPage\CheckGetUrlPage.csproj" />
+    <ProjectReference Include="..\CheckWebBrowser\CheckWebBrowser.vbproj" />
+    <ProjectReference Include="..\GetLink\GetLink.csproj" />
+  </ItemGroup>
 
 </Project>
