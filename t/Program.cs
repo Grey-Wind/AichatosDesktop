@@ -1,25 +1,49 @@
-﻿if (args.Length == 0)
+﻿internal class Program
 {
-    return;
-}
+    private static async Task Main(string[] args)
+    {
+        if (args.Length == 0)
+        {
+            return;
+        }
 
-string command = args[0];
+        string command = args[0];
 
-switch (command)
-{
-    case "greet":
-        Greet();
-        break;
-    case "time":
-        ShowTime();
-        break;
-    case "date":
-        ShowDate();
-        break;
-    case "exit":
-        Exit();
-        break;
-    default:
-        Console.WriteLine("Unknown command. Available commands: greet, time, date, exit.");
-        break;
+        switch (command)
+        {
+            case "--get-url":
+                await GetUrlAsync();
+                break;
+            case "--help":
+                ShowHelpInfo();
+                break;
+            case "--install":
+                Install();
+                break;
+            default:
+                break;
+        }
+    }
+
+    private static void Install()
+    {
+        Console.WriteLine("You cannot use this.");
+    }
+
+    private static void ShowHelpInfo()
+    {
+        Console.WriteLine("Guess where is the true info.");
+    }
+
+    private static async Task GetUrlAsync()
+    {
+        if(await CheckPageAsync() == true)
+        {
+            return;
+        }
+        else
+        {
+            return;
+        }
+    }
 }
