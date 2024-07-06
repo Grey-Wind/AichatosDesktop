@@ -10,6 +10,51 @@
     Height="450"
     Icon="/chat8.png"
     WindowStyle="None"
-    mc:Ignorable="d">
-    <Grid />
+    mc:Ignorable="d" AllowsTransparency="True" Background="{x:Null}" Foreground="{x:Null}">
+
+    <Window.Resources>
+        <!--  禁用默认鼠标悬停事件  -->
+        <Style x:Key="BanDefaultMouse" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border
+                            Name="border"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="Black"
+                            BorderThickness="0">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="1" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <!--  用于页面圆角  -->
+        <Border
+            x:Name="RoundCornerBorder"
+            Margin="3"
+            d:IsLocked="True"
+            Background="White"
+            CornerRadius="15">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="0" />
+            </Border.Effect>
+        </Border>
+        
+        <Frame
+            x:Name="TitleFrame"
+            Content=""
+            NavigationUIVisibility="Hidden"
+            Source="/Forms/Title.xaml" Margin="0,0,0,410" />
+    </Grid>
 </Window>

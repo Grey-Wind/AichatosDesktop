@@ -8,4 +8,18 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="chat8.png" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\CheckGetUrlPage\CheckGetUrlPage.csproj" />
+    <ProjectReference Include="..\CheckWebBrowser\CheckWebBrowser.vbproj" />
+    <ProjectReference Include="..\GetLink\GetLink.csproj" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <Resource Include="chat8.png" />
+  </ItemGroup>
+
 </Project>
