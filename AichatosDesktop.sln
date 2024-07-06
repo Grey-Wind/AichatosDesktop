@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aichatos", "Aichatos\Aichatos.csproj", "{F960D92F-EE74-43B6-B96B-5C21DD0AA832}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetLink", "GetLink\GetLink.csproj", "{26828032-4A60-43BA-80FF-55189AF1C55B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetLink", "GetLink\GetLink.csproj", "{26828032-4A60-43BA-80FF-55189AF1C55B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetLinkTest", "GetLinkTest\GetLinkTest.csproj", "{2F77FFBC-D7F6-41A6-A339-EC23653C2DE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetLinkTest", "GetLinkTest\GetLinkTest.csproj", "{2F77FFBC-D7F6-41A6-A339-EC23653C2DE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckGetUrlPage", "CheckGetUrlPage\CheckGetUrlPage.csproj", "{D768F34C-F44A-435B-845A-7F4BB3B7A632}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckGetUrlPage", "CheckGetUrlPage\CheckGetUrlPage.csproj", "{D768F34C-F44A-435B-845A-7F4BB3B7A632}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CheckWebBrowser", "CheckWebBrowser\CheckWebBrowser.vbproj", "{E9B3EB79-E6B3-4E98-8517-549A94765319}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F960D92F-EE74-43B6-B96B-5C21DD0AA832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F960D92F-EE74-43B6-B96B-5C21DD0AA832}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F960D92F-EE74-43B6-B96B-5C21DD0AA832}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F960D92F-EE74-43B6-B96B-5C21DD0AA832}.Release|Any CPU.Build.0 = Release|Any CPU
 		{26828032-4A60-43BA-80FF-55189AF1C55B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{26828032-4A60-43BA-80FF-55189AF1C55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26828032-4A60-43BA-80FF-55189AF1C55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{D768F34C-F44A-435B-845A-7F4BB3B7A632}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D768F34C-F44A-435B-845A-7F4BB3B7A632}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D768F34C-F44A-435B-845A-7F4BB3B7A632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9B3EB79-E6B3-4E98-8517-549A94765319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B3EB79-E6B3-4E98-8517-549A94765319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B3EB79-E6B3-4E98-8517-549A94765319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B3EB79-E6B3-4E98-8517-549A94765319}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
